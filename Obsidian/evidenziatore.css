@@ -1,0 +1,332 @@
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-wrapper img {
+  border-radius: 6px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.custom-title {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+/* Disabilita spellcheck per evidenziamenti in modalità editor */
+.cm-highlight {
+	spellcheck: false !important;
+}
+
+/* Disabilita spellcheck per evidenziamenti in modalità preview */
+.markdown-preview-view mark {
+	spellcheck: false !important;
+}
+
+.HyperMD-header {
+    padding-top: 30px !important;
+	padding-bottom: 0px !important;
+}
+
+/* Per la modalità editor */
+.cm-s-obsidian span.cm-highlight
+{
+	/*font-family: var(--font-monospace) !important; */
+	letter-spacing: 0px !important;
+	font-weight: 700;
+	font-size: 16px !important;
+	padding: 2px 4px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0);
+	white-space: pre-wrap;
+	spellcheck: false !important;
+}
+
+span.cm-inline-code {
+	/*font-family: var(--font-monospace) !important; */
+	letter-spacing: 0px !important;
+	font-weight: 700;
+	font-size: 15px !important;
+	padding: 2px 4px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0);
+	white-space: pre-wrap;
+	spellcheck: false !important;
+}
+
+.cm-em {
+  font-style: italic;
+  font-weight: 700;
+  color: rgba(82, 82, 82, 0.6);
+}
+
+.rosso mark,
+.rosso span.cm-highlight {
+	background-color: rgba(255, 10, 10, 0.45);
+}
+
+.arancione mark,
+.arancione span.cm-highlight {
+	background-color: rgb(255, 170, 20, 0.7);
+}
+
+.giallo mark,
+.giallo span.cm-highlight {
+	background-color: rgb(255, 221, 0, 0.6);
+}
+
+.verde mark,
+.verde span.cm-highlight {
+	background-color: rgba(0, 240, 0, 0.35);
+}
+
+.blu mark,
+.blu span.cm-highlight {
+	background-color: rgba(0, 100, 150, 0.3);
+}
+
+.viola mark,
+.viola span.cm-highlight {
+	background-color: rgb(186, 85, 211, 0.6);
+}
+
+
+
+/* ------------------------------------------------ */
+
+.oro-argento mark,
+.oro-argento span.cm-highlight {
+	background: white;
+	color: rgba(170, 170, 170, 0.85) !important;          		  /* grigio chiaro freddo */
+	text-shadow: 1px 2px 4px rgba(200, 200, 200, 0.9) !important; /* ombra grigio-blu scura */
+	font-weight: 700;
+	font-size: 16px !important;
+}
+
+.scopo-base mark,
+.scopo-base span.cm-highlight {
+	color: rgba(255, 0, 40, 0.6) !important;
+	text-shadow: 1px 2px 4px rgba(150, 50, 50, 0.5) !important;
+}
+
+.mente-gioco mark,
+.mente-gioco span.cm-highlight {
+	color: rgba(0, 150, 240, 0.9) !important;
+	text-shadow: 1px 2px 4px rgba(0, 100, 150, 0.6) !important;
+}
+
+.abilità-spirito mark,
+.abilità-spirito span.cm-highlight {
+	color: rgba(210, 210, 0, 1) !important;
+	text-shadow: 2px 3px 5px rgba(255, 221, 10, 0.8) !important;
+}
+
+
+/* ------------------------------------------------ */
+
+.oro-argento code,
+.oro-argento span.cm-inline-code {
+	color: rgba(235, 210, 0, 0.85) !important;           		 /* giallo oro caldo */
+	text-shadow: 1px 2px 4px rgba(255, 215, 0, 0.6) !important;  /* ombra bruna dorata */
+	font-weight: 700;
+	font-size: 16px !important;
+}
+
+.scopo_base code,
+.scopo-base span.cm-inline-code {
+	color: rgba(0, 230, 0, 0.9) !important;
+	text-shadow: 1px 2px 4px rgba(50, 150, 50, 0.30) !important;
+}
+
+.mente-gioco code,
+.mente-gioco span.cm-inline-code {
+	color: rgb(255, 120, 20, 0.9) !important;
+	text-shadow: 1px 2px 4px rgb(220, 120, 50, 0.7) !important;
+}
+
+.abilità-spirito code,
+.abilità-spirito span.cm-inline-code {
+	color: rgb(186, 85, 211, 0.9) !important;
+	text-shadow: 1px 2px 4px rgb(186, 85, 211, 0.8) !important;
+}
+
+h1 {
+	margin-bottom: 0px !important;
+}
+
+h3 {
+	padding-top: 20px !important;
+	padding-bottom: 0px !important;
+	margin-bottom: 0 !important; /* ← Elimina spazio sotto il titolo */
+}
+
+.scopo h1 span {
+	color: rgba(255, 10, 10, 0.65);
+}
+
+.base h1 span {
+	color: rgba(50, 240, 50, 0.65);
+}
+
+.mente h1 span {
+	color: rgba(50, 90, 250, 0.60);
+}
+
+.gioco h1 span {
+	color: rgb(255, 170, 20, 0.9);
+}
+
+.abilità h1 span {
+	color: rgb(255, 221, 0, 0.9);	
+}
+
+.spirito h1 span {
+	color: rgb(186, 85, 211, 0.8);	
+}
+
+
+@media print {
+	
+	@page {
+		/* size: 21cm 50cm; */
+		margin-left: 20mm !important;
+		margin-right: 20mm !important;
+	}
+
+	.markdown-preview-view h1:first-of-type:not(.custom-title) {
+		display: none !important;
+	}
+	
+	body {
+		break-after: avoid;
+	}
+	
+	.scopo h1 span {
+		color: rgba(255, 10, 10, 0.65); !important;	
+	}
+	
+	h1 {
+		margin-bottom: 0px !important;
+	}
+	
+	h3 {
+		padding-top: 30px !important;
+		padding-bottom: 0px !important;
+		margin-bottom: 0 !important; /* ← Elimina spazio sotto il titolo */
+	}
+	
+	h3 + * {
+    margin-top: 0 !important;
+	}
+	
+	a.tag, 
+	span.tag {
+		padding-top: 0px !important;
+		padding-bottom: 2px !important;
+		margin-top: 0 !important; /* ← Elimina spazio sopra i tag */
+	}
+	
+	ul li, ol li {
+		position: relative;
+		padding-left: 1.5em;
+		text-indent: -1.5em;
+		margin-bottom: 0.8em;
+		margin-bottom: 20px !important; /* distanza verticale tra gli elementi */
+	}
+	
+	li::before {
+		content: "";
+		position: absolute;
+		top: 1.4em; /* sposta la linea in basso per saltare la prima riga */
+		/* left: 0.5em; */
+		width: 2px;
+		height: calc(100% - 1.4em); /* solo da seconda riga in giù */
+	}
+	
+	.scopo li::before {
+		background-color: rgba(255, 10, 10, 0.45);
+	}
+	
+	.base li::before {
+		background-color: rgba(0, 240, 0, 0.35);
+	}
+	
+	.mente li::before {
+		background-color: rgba(0, 100, 150, 0.45);
+	}
+	
+	.gioco li::before {
+		background-color: rgb(255, 170, 20, 0.7);
+	}
+	
+	.abilità li::before {
+		background-color: rgb(255, 221, 0, 0.6);
+	}
+	
+	.spirito li::before {
+		background-color: rgb(186, 85, 211, 0.6);
+	}	
+	
+	.markdown-preview-view mark {
+		/*font-family: var(--font-monospace) !important; */
+		letter-spacing: 0px !important;
+		font-weight: 700;
+		font-size: 16px !important;
+		padding: 0px 0px;
+		border-radius: 4px;
+		background-color: rgba(0, 0, 0, 0);
+		white-space: pre-wrap;
+		spellcheck: false !important;
+	}
+
+	.markdown-preview-view code {
+		/*font-family: var(--font-monospace) !important; */
+		letter-spacing: 0px !important;
+		font-weight: 700;
+		font-size: 15px !important;
+		padding: 0px 0px !important;
+		border-radius: 4px;
+		background-color: rgba(0, 0, 0, 0);
+		white-space: pre-wrap;
+		spellcheck: false !important;
+	}
+	
+	.markdown-preview-view em,
+	.markdown-rendered em {
+	  font-style: italic;
+	  font-weight: 700;
+	  color: rgba(82, 82, 82, 0.6);
+	}
+
+	.scopo_base mark {
+		color: rgba(255, 0, 40, 0.7) !important;
+		text-shadow: 1px 2px 4px rgba(150, 50, 50, 0.5) !important;
+	}
+
+	.mente-gioco mark {
+		color: rgba(0, 150, 240, 0.9) !important;
+		text-shadow: 1px 2px 4px rgba(0, 100, 150, 0.6) !important;
+	}
+	
+	.abilità-spirito mark {
+		color: rgba(210, 210, 0, 1) !important;
+		text-shadow: 2px 3px 5px rgba(255, 221, 10, 0.8) !important;
+	}
+
+	.scopo-base code {
+		color: rgba(0, 230, 0, 0.9) !important;
+		text-shadow: 1px 2px 4px rgba(50, 150, 50, 0.30) !important;
+	}
+	
+	.mente-gioco code {
+		color: rgb(255, 120, 20, 0.9) !important;
+		text-shadow: 1px 2px 4px rgb(220, 120, 50, 0.7) !important;
+	}
+	
+	.abilità-spirito code {
+		color: rgb(186, 85, 211, 0.9) !important;
+		text-shadow: 1px 2px 4px rgb(186, 85, 211, 0.8) !important;
+	}
+}
